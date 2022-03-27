@@ -1,0 +1,65 @@
+main {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.loader {
+  display: none;
+  text-align: center;
+  width: 100%;
+}
+
+.cancion blockquote {
+  white-space: pre-wrap;
+}
+
+.loader i {
+  font-size: 50px;
+  color: red;
+}
+
+.formulario {
+  display: flex;
+  padding: 10px 20px;
+}
+
+.boton {
+  border-radius: 50%;
+  background: red;
+  border: 1px red solid;
+  color: white;
+  cursor: pointer;
+}
+
+.artista p {
+  text-align: justify;
+}
+
+h2 {
+  padding: 0px 10px;
+}
+
+h1 {
+  text-align: center;
+}
+
+input {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media screen and (min-width: 800px) {
+  main {
+    flex-direction: row;
+  }
+  main > * {
+    padding: 1rem;
+    flex-basis: 50%;
+  }
+}
